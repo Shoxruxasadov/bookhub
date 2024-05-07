@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --main-color: #FEAA3A;
+    --main-click-color: #ffbf6c;
+    --main-shadow-color: #ffbf6ca6;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Montserrat";
+
+    &::-webkit-scrollbar{
+        width: 0.6em;
+    }
+
+    &::-webkit-scrollbar-thumb{
+        border: 2px solid white;
+        background: var(--main-color);
+        border-radius: 16px;
+    }
+}
+
+button, input{
+    font-family: "Inter";
+}
+
+@import './home';
+@import './auth';
